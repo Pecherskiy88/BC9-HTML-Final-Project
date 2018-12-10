@@ -26,9 +26,82 @@
   font-weight: 900;
 }
 
-.study_title {
-  font-size: 48px;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.study {
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.study--image {
+  width: 100%;
+}
+
+.study--main_title {
+  font-size: 12px;
   font-weight: 700;
+  color: #000;
+  font-family: "Acrom";
+  text-transform: uppercase;
+  width: 250px;
+  margin: auto;
+}
+
+.study_biggest {
+  width: 195px;
+  margin: auto;
+}
+
+.study_div::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #000000;
+  margin: 6px 4px 0 0;
+}
+
+.study_div {
+  display: flex;
+  width: 195px;
+  margin: auto;
+}
+
+.study_div--paragraph {
+  width: 175px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Acrom";
+}
+
+.study--paragraph {
+  width: 195px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom";
+}
+
+.study--title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  font-family: "Acrom";
+}
+
+.study--sub_title {
+  font-size: 12px;
+  font-weight: 900;
+  color: #000;
+  font-family: "Acrom";
+}
+
+.study_biggest--paragraph {
+  font-size: 9px;
+  font-weight: 500;
   color: #000;
   font-family: "Acrom";
 }

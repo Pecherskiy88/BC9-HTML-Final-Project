@@ -1,3 +1,51 @@
-.study_title{
-    @include font-style(48, 700);
+*{
+    margin: 0;padding: 0;
+}
+
+.study{
+    padding: 1.5rem 1rem 2.5rem;
+
+    &--image{
+        width: 100%;
+    }
+        &--main_title{    
+        @include font-style(12, 700);
+        text-transform: uppercase;
+        width: 250px;
+        margin: auto;
+    }
+    &_biggest{
+        width: 195px;
+        margin: auto;
+    }
+    &_div::before{
+        content: "";
+        display: block;
+        width: 14px;
+        height: 2px;
+        background-color: #000000;
+        margin: 6px 4px 0 0;
+    }
+    &_div{
+        display: flex;
+        width: 195px;
+        margin: auto;
+    }
+    &_div--paragraph{
+        width: 175px;
+        @include font-style(9, 500);
+    }
+    &--paragraph{
+        width: 195px;
+        @include font-style(9, 400);
+    }
+    &--title{
+        @include font-style(16, 500);
+    }
+    &--sub_title{
+        @include font-style(12, 900);
+    }
+    &_biggest--paragraph{
+        @include font-style(9, 500);
+    }
 }
