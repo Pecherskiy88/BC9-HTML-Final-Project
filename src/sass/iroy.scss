@@ -3,22 +3,29 @@
 }
 
 .study{
-    padding: 1.5rem 1rem 2.5rem;
+    padding: 1.5rem 1rem;
 
-    &--image{
-        width: 100%;
-    }
-        &--main_title{    
-        @include font-style(12, 700);
-        text-transform: uppercase;
-        width: 250px;
-        margin: auto;
+    &--main_title{    
+    @include font-style(12, 700);
+    text-transform: uppercase;
+    width: 250px;
+    margin: 0 auto 10px;
     }
     &_biggest{
         width: 195px;
         margin: auto;
+
+        &--paragraph{
+            margin-bottom: 24px;
+        }
     }
-    &_div::before{
+
+    &--image{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &_numberone::before{
         content: "";
         display: block;
         width: 14px;
@@ -26,26 +33,76 @@
         background-color: #000000;
         margin: 6px 4px 0 0;
     }
-    &_div{
+    &_numberone{
         display: flex;
         width: 195px;
-        margin: auto;
-    }
-    &_div--paragraph{
+        margin: 0 auto 24px;
+
+        &--paragraph{
         width: 175px;
         @include font-style(9, 500);
+        }
     }
-    &--paragraph{
+
+    &_goforit{
+        position: relative;
         width: 195px;
+        margin: auto;
+
+        &--image{    
+            position: absolute;
+            right: 0;
+            width: 53px;
+        }
+        &--sub_title{
+            width: 122px;
+        }
+        &--paragraph{
+            margin-bottom: 24px;
+        }
+    }
+
+    &_recognized{
+        width: 195px;
+        margin: auto;
+
+        &--list{
+            list-style: none;
+
+            &_item{
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                margin-bottom: 24px;
+
+                &_image1{
+                    width: 27px;
+                }
+                &_image2{
+                    width: 36px;
+                }
+                &_title{
+                    width: 110px;
+                }
+            }
+        }
+    }
+
+
+    &--paragraph{
         @include font-style(9, 400);
     }
     &--title{
-        @include font-style(16, 500);
+        @include font-style(10, 500);
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 24px;
     }
     &--sub_title{
-        @include font-style(12, 900);
-    }
-    &_biggest--paragraph{
-        @include font-style(9, 500);
+        @include font-style(9, 900);
+        text-transform: uppercase;
+        margin-bottom: 5px;
+
     }
 }

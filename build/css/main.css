@@ -32,11 +32,7 @@
 }
 
 .study {
-  padding: 1.5rem 1rem 2.5rem;
-}
-
-.study--image {
-  width: 100%;
+  padding: 1.5rem 1rem;
 }
 
 .study--main_title {
@@ -46,7 +42,7 @@
   font-family: "Acrom";
   text-transform: uppercase;
   width: 250px;
-  margin: auto;
+  margin: 0 auto 10px;
 }
 
 .study_biggest {
@@ -54,7 +50,16 @@
   margin: auto;
 }
 
-.study_div::before {
+.study_biggest--paragraph {
+  margin-bottom: 24px;
+}
+
+.study--image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.study_numberone::before {
   content: "";
   display: block;
   width: 14px;
@@ -63,13 +68,13 @@
   margin: 6px 4px 0 0;
 }
 
-.study_div {
+.study_numberone {
   display: flex;
   width: 195px;
-  margin: auto;
+  margin: 0 auto 24px;
 }
 
-.study_div--paragraph {
+.study_numberone--paragraph {
   width: 175px;
   font-size: 9px;
   font-weight: 500;
@@ -77,8 +82,55 @@
   font-family: "Acrom";
 }
 
-.study--paragraph {
+.study_goforit {
+  position: relative;
   width: 195px;
+  margin: auto;
+}
+
+.study_goforit--image {
+  position: absolute;
+  right: 0;
+  width: 53px;
+}
+
+.study_goforit--sub_title {
+  width: 122px;
+}
+
+.study_goforit--paragraph {
+  margin-bottom: 24px;
+}
+
+.study_recognized {
+  width: 195px;
+  margin: auto;
+}
+
+.study_recognized--list {
+  list-style: none;
+}
+
+.study_recognized--list_item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.study_recognized--list_item_image1 {
+  width: 27px;
+}
+
+.study_recognized--list_item_image2 {
+  width: 36px;
+}
+
+.study_recognized--list_item_title {
+  width: 110px;
+}
+
+.study--paragraph {
   font-size: 9px;
   font-weight: 400;
   color: #000;
@@ -86,22 +138,21 @@
 }
 
 .study--title {
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 500;
   color: #000;
   font-family: "Acrom";
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
 .study--sub_title {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 900;
   color: #000;
   font-family: "Acrom";
-}
-
-.study_biggest--paragraph {
-  font-size: 9px;
-  font-weight: 500;
-  color: #000;
-  font-family: "Acrom";
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
