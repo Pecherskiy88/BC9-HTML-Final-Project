@@ -1,0 +1,13 @@
+@media (min-width: 480px) and (max-width: 768px){
+
+    .study{
+
+        &--main_title {
+        font-size: 18px;
+        width: 375px;
+        }
+        &_biggest {
+            width: 290px;
+        }
+    }
+}

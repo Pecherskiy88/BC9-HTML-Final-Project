@@ -15,6 +15,11 @@
         width: 195px;
         margin: auto;
 
+        &--title{
+            margin-bottom: 5px;
+
+        }
+
         &--paragraph{
             margin-bottom: 24px;
         }
@@ -74,6 +79,7 @@
                 flex-direction: row-reverse;
                 align-items: flex-start;
                 margin-bottom: 24px;
+                
 
                 &_image1{
                     width: 27px;
@@ -102,7 +108,143 @@
     &--sub_title{
         @include font-style(9, 900);
         text-transform: uppercase;
-        margin-bottom: 5px;
+    }
+}
 
+@media (min-width: 480px) and (max-width: 767px){
+
+    .study{
+
+        &--main_title{
+            font-size: 18px;
+            width: 375px;
+            margin-bottom: 16px;
+        }
+        &_biggest,
+        &_numberone,
+        &_goforit,
+        &_recognized{
+            width: 290px;
+        }
+
+        &_biggest{
+            &--title{
+                margin-bottom: 10px;
+            }
+            &--paragraph {
+                margin-bottom: 36px;
+            }
+        }
+
+        &--image {
+            margin-bottom: 56px;
+        }
+
+        &_numberone::before {
+            width: 20px;
+            margin: 9px 8px 0 0;
+            height: 4px;
+        }
+
+        &_numberone{
+            margin-bottom: 32px;
+        }
+        &_numberone--paragraph {
+            width: 260px;
+            font-size: 13px;
+        }
+
+        &_goforit--image {
+            width: 80px;
+        }
+        &_goforit--paragraph {
+            margin-bottom: 40px;
+        }
+        &_recognized--list_item_image1 {
+            width: 41px;
+        }
+        &_recognized--list_item_image2 {
+            width: 54px;
+        }
+        &_recognized--list_item_title {
+            width: 165px;
+        }
+
+        &--paragraph,
+        &--title,
+        &--sub_title{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px){
+
+    .study{
+        padding: 3rem 4rem;
+        
+        &_header{
+            width: 640px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &_biggest {
+            display: flex;
+            width: 345px;
+            margin: 0;
+
+            &--title{
+                width: 93px;
+            }
+            &--paragraph{
+                width: 120px;
+            }
+        }
+
+
+        &_footer{
+            width: 640px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_goforit{
+            width: 151px;
+            margin: 0;
+
+            &--sub_title{
+                margin-bottom: 10px;
+            }
+        }
+        &_recognized{
+            width: 475px;
+            margin: 0;
+
+            &--list{
+            width: 475px;
+            display: flex;
+            justify-content: space-between;
+
+                &_item{
+                    width: 140px;
+                    justify-content: space-between;
+
+                    &_title {
+                        width: 55px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 100px;
+                    }
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title,
+        &--sub_title{
+            font-size: 9px;
+        }
     }
 }
