@@ -3,6 +3,7 @@
     padding: 0;
 }
 .recording {
+    position: relative;
     margin: 0 auto;
     width: 12.25rem;
     text-align: center;
@@ -12,6 +13,7 @@
         @include font-style(14, 900);
         text-transform: uppercase;
         padding-bottom: 3.75%;
+        margin-top: 30px;
         }
         
     &__text{
@@ -91,7 +93,7 @@
 
 @media (min-width: 48rem){
     .recording {
-        width: 39.4375rem;
+        width: 631px;
        
     &__title{    
         @include font-style(27, 900);
@@ -109,8 +111,8 @@
     }
     .foto__pic{
         position: absolute;
-        top: 10.5%;
-        left: 10%;
+        top: 1.5%;
+        left: 4%;
         margin-bottom: 0%;
     }
     .list{  
@@ -177,8 +179,8 @@
     }
     .foto__pic{
         position: absolute;
-        top: 10.5%;
-        left: 20.5%;
+        top: 1.5%;
+        left: 4%;
         margin-bottom: 0%;
     }
     .list{  

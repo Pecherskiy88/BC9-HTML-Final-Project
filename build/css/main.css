@@ -39,6 +39,90 @@
 }
 
 * {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.recording {
+  position: relative;
+  margin: 0 auto;
+  width: 12.25rem;
+  text-align: center;
+}
+
+.recording__title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 3.75%;
+  margin-top: 30px;
+}
+
+.recording__text {
+  font-size: 10px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin: 0 0 9% 8%;
+}
+
+.recording__text::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: -1rem;
+  top: 0.5rem;
+  width: 0.625rem;
+  height: 0.125rem;
+  background-color: #000;
+}
+
+.recording__text--blue {
+  font-size: 10px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  background-color: #16ebfe;
+}
+
+.foto__pic {
+  margin-bottom: 12.245%;
+}
+
+.list__item {
+  list-style: square outside;
+  width: 11.75rem;
+  text-align: left;
+  margin-bottom: 6%;
+  position: relative;
+  left: 0.5rem;
+}
+
+.list__item--name {
+  font-size: 10px;
+  font-weight: 900;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 0.09%;
+}
+
+.list__item--info {
+  font-size: 10px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  color: #3f4144;
+}
+
+* {
   padding: 0;
   margin: 0;
 }
@@ -998,6 +1082,53 @@ button {
   justify-content: space-between;
 }
 
+@media (min-width: 26.625rem) {
+  .recording {
+    width: 18.375rem;
+  }
+
+  .recording__title {
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .recording__text {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .recording__text--blue {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .list__item {
+    list-style: square outside;
+    width: 17rem;
+    left: 1rem;
+  }
+
+  .list__item--name {
+    font-size: 12px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .list__item--info {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+}
+
 @media (min-width: 30rem) {
   .steps {
     background-image: url("../images/bg_480@1X.png");
@@ -1144,6 +1275,84 @@ button {
 }
 
 @media (min-width: 48rem) {
+  .recording {
+    width: 631px;
+  }
+
+  .recording__title {
+    font-size: 27px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    text-align: left;
+    margin: 12% 0% 0 61%;
+    padding-bottom: 1rem;
+  }
+
+  .recording__text {
+    font-size: 8px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    margin: 0 0 4% 69%;
+  }
+
+  .recording__text--blue {
+    font-size: 8px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .foto__pic {
+    position: absolute;
+    top: 1.5%;
+    left: 4%;
+    margin-bottom: 0%;
+  }
+
+  .list__item {
+    list-style: square outside;
+    width: 35%;
+    left: 3%;
+    margin: 0 3.2% 1% 61%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .list__item--name {
+    font-size: 10px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .list__item--info {
+    font-size: 8px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    color: #000;
+  }
+
+  .recording__text::before {
+    left: -3rem;
+    top: 0.6rem;
+    width: 1.8125rem;
+    height: 0.25rem;
+  }
+
+  .list__item:nth-child(3) > .list__item--name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
   .steps,
   .video {
     margin: 0 4.375rem;
@@ -1359,12 +1568,76 @@ button {
   }
 
   .total-wrapper {
-    width: 810px;
+    width: 630px;
     margin: 0 auto;
   }
 }
 
+@media (min-width: 60rem) {
+  .recording {
+    width: 49.25rem;
+  }
+
+  .recording__title {
+    margin: 10.5% 0% 0 61%;
+  }
+
+  .recording__text {
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    margin: 0 0 1% 69%;
+  }
+
+  .recording__text--blue {
+    font-size: 10px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .recording__text::before {
+    top: 0.8rem;
+  }
+
+  .list__item {
+    margin: 0 3% 2% 61%;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+}
+
 @media (min-width: 75rem) {
+  .recording {
+    width: 44.3125rem;
+  }
+
+  .recording__title {
+    font-size: 27px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+    text-align: left;
+    margin: 10.5% 0% 0 61%;
+    padding-bottom: 1%;
+  }
+
+  .foto__pic {
+    position: absolute;
+    top: 1.5%;
+    left: 4%;
+    margin-bottom: 0%;
+  }
+
+  .list__item {
+    width: 35%;
+    left: 3%;
+    margin: 0 3% 1% 61%;
+  }
+
   .video__big-title {
     font-size: 28px;
     font-weight: 800;
@@ -1374,6 +1647,25 @@ button {
 }
 
 @media (min-width: 90rem) {
+  .recording {
+    width: 53.25rem;
+  }
+
+  .recording__title {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom", sans-serif;
+  }
+
+  .recording__text {
+    margin: 0 0 3% 69%;
+  }
+
+  .list__item {
+    margin: 0 3% 2.5% 61%;
+  }
+
   .video__big-title {
     font-size: 27px;
     font-weight: 800;
