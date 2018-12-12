@@ -1,268 +1,376 @@
-*{
+
+* {
     padding: 0;
-    margin: 0; 
+    margin: 0;
 }
-.hand{
+.hand {
     padding: 0 12px;
     margin-top: 16px;
-    &__title{
-        width: 144px;
-        margin: 0 auto;
-        @include font-style(12, 900);
-        line-height: 1;
-        text-transform: uppercase;
-    }
-    &__text--before{
-        @include font-style(10, 500);
-        display: flex;
-        width: 158px;
-        margin: 14px auto 0;
-        &::before{
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: $primary-color;
-            position: relative;
-            top: 4px;
-            right: 7px;
-        }
-    }
-    &__pic{
-        display: block;
-        margin: 16px auto 0;
-    }
-    &__title-img{
-        width: 160px;
-        margin: 26px auto 0;
-        @include font-style(10, 900);
-        text-transform: uppercase;
-        line-height: 1;
-    }
-    &__text{
-        @include font-style(10, 500);
-        display: flex;
-        width: 158px;
-        margin: 14px auto 0;
-    }
 }
-
-
-.only-about{
+.hand__title {
+    width: 144px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom";
+    line-height: 1;
+    text-transform: uppercase;
+}
+.hand__text--before {
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+    font-family: "Acrom";
+    display: flex;
+    width: 158px;
+    margin: 14px auto 0;
+}
+.hand__text--before::before, .only-about__text--color::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    top: 4px;
+    right: 7px;
+}
+.hand__pic {
+    display: block;
+    margin: 16px auto 0;
+}
+.hand__text, .hand__title-img {
+    font-size: 10px;
+    color: #000;
+    font-family: "Acrom"}
+.hand__title-img {
+    text-transform: uppercase;
+    line-height: 1;
+    width: 160px;
+    margin: 26px auto 0;
+    font-weight: 900;
+}
+.hand__text {
+    font-weight: 500;
+    display: flex;
+    width: 158px;
+    margin: 14px auto 0;
+}
+.only-about {
     padding: 31px 16px 0;
-
-    &-pic{
-        display: block;
-        margin: 0 auto;
-        width: 184px;
-        background-image: url("../images/only_it@1X.png");
-        background-position-x: 76px;
-        background-repeat: no-repeat;
-    }
-    &__pic{
-        display: block;
-        width: 147px;
-        height: 166px;
-        margin: 0 auto;
-    }
-    &__fraction{
-        color: $primary-color;
-    }
-    &__text{
-        @include font-style(10, 500, $action-color);
-        width: 237px;
-        margin: 30px auto 0;
-    }
-    &__title{
-        width: 195px;
-        margin: 15px auto 0;
-        @include font-style(12, 900, $white-color);
-        background-color: $primary-color;
-        line-height: 1;
-        text-transform: uppercase;
-        text-align: center;
-    }
-    &__text--color{
-        display: flex;
-        color: $primary-color;
-        width: 191px;
-        &::before{
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: $primary-color;
-            position: relative;
-            top: 4px;
-            right: 7px;
-        }
-        
-    }
-
 }
-
-
-.only-opportunities{
+.only-about-pic {
+    display: block;
+    margin: 0 auto;
+    width: 184px;
+    background-image: url("../images/only_it@1X.png");
+    background-position-x: 76px;
+    background-repeat: no-repeat;
+}
+.only-about__pic {
+    display: block;
+    width: 147px;
+    height: 166px;
+    margin: 0 auto;
+}
+.only-about__fraction {
+    color: #000;
+}
+.only-about__text, .only-about__title {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ff6007;
+    font-family: "Acrom";
+    width: 237px;
+    margin: 30px auto 0;
+}
+.only-about__title {
+    width: 195px;
+    margin: 15px auto 0;
+    font-size: 12px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #000;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+}
+.only-about__text--color {
+    display: flex;
+    color: #000;
+    width: 191px;
+}
+.only-opportunities {
     padding: 38px 12px 0;
-    &__title{
-        width: 234px;
-        margin: 0 auto;
-        @include font-style(10, 900);
-        line-height: 1.5;
-        text-transform: uppercase;
-        letter-spacing: -1px;
-    }
-
-    &-list{
-        width: 190px;
-        margin: 22px auto 0;
-
-        &__item{
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            &::before{
-                content: "[ 001 ]";
-                @include font-style(9, 700, $white-color);
-                text-align: center;
-                transform: rotate(90deg);
-                display: block;
-                width: 35px;
-                height: 7px;
-                background-color: $action-color; 
-                position: relative;
-                top: 44px;
-                right: 30px;
-            }
-        }
-        
-        &__text{
-            @include font-style(11, 700);
-            margin-top: 19px;
-            width: 160px;
-            }
-        &--color{
-            @include font-style(10, 500, $grey-color); 
-            margin-top: 9px;
-            width: 160px;
-        }
-    }
-
+}
+.only-opportunities__title {
+    width: 234px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 900;
+    color: #000;
+    font-family: "Acrom";
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.only-opportunities-list {
+    width: 190px;
+    margin: 22px auto 0;
+}
+.only-opportunities-list__item {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.only-opportunities-list__item::before {
+    content: "[ 001 ]";
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Acrom";
+    text-align: center;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+    width: 35px;
+    height: 7px;
+    background-color: #ff6007;
+    position: relative;
+    top: 44px;
+    right: 30px;
+}
+.only-opportunities-list__text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #000;
+    font-family: "Acrom";
+    margin-top: 19px;
+    width: 160px;
+}
+.only-opportunities-list--color {
+    font-size: 10px;
+    font-weight: 500;
+    color: #3f4144;
+    font-family: "Acrom";
+    margin-top: 9px;
+    width: 160px;
 }
 
-@media(min-width: 480px){
-    .hand{
-        &__title{
-            width: 215px;
-            font-size: 16px;
-            font-weight: 900;
-            line-height: 2;
-        }
-        &__text--before{
-            font-size: 12px;
-            width: 220px;
-        }
-        &__title-img{
-            font-size: 12px;
-            width: 199px;
-            line-height: 1.5;
-        }
-        &__text{
-            font-size: 12px;
-            width: 200px;
-        }
-    }
-
-    .only-about{
-        &-pic{
-            width: 250px;
-            background-position-x: 144px;
-        }
-        &__pic{
-            width: 220px;
-            height: 249px;
-        }
-        &__text{
-            font-size: 12px;
-            width: 355px;
-        }
-        &__title{
-            font-size: 16px;
-            width: 293px;
-            padding: 3px 0;
-            letter-spacing: 1px;
-        }
-        &__text--color{
-            width: 270px;
-        }
-    }
-
-    .only-opportunities{
-        &__title{
-            font-size: 14px;
-            width: 351px;
-        }
-        &-list{
-            width: 280px;
-
-            &__text{
-                font-size: 14px;
-                width: 250px;
-            }
-            &--color{
-                font-size: 13px;
-                width: 250px;
-            }
-        }
-       
-        
-    }
-
+@media (min-width:480px) {
+    .hand__title {
+    width: 215px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 2;
 }
-
-@media(min-width: 768px){
-    .hand{
-        margin: 0 auto;
+.hand__text--before {
+    font-size: 12px;
+    width: 220px;
+}
+.hand__title-img {
+    font-size: 12px;
+    width: 199px;
+    line-height: 1.5;
+}
+.hand__text {
+    font-size: 12px;
+    width: 200px;
+}
+.only-about-pic {
+    width: 250px;
+    background-position-x: 144px;
+}
+.only-about__pic {
+    width: 220px;
+    height: 249px;
+}
+.only-about__text {
+    font-size: 12px;
+    width: 355px;
+}
+.only-about__title {
+    font-size: 16px;
+    width: 293px;
+    padding: 3px 0;
+    letter-spacing: 1px;
+}
+.only-about__text--color {
+    width: 270px;
+}
+.only-opportunities__title {
+    font-size: 14px;
+    width: 351px;
+}
+.only-opportunities-list {
+    width: 280px;
+}
+.only-opportunities-list__text {
+    font-size: 14px;
+    width: 250px;
+}
+.only-opportunities-list--color {
+    font-size: 13px;
+    width: 250px;
+}
+}
+@media (min-width:768px) {
+        .hand {
         padding-top: 57px;
         width: 630px;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
+        }
+        
+    .hand, .hand__pic {
+        margin: 0 auto;
+    }
+    .hand__title {
+        width: 200px;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .hand__text--before {
+        font-size: 10px;
+        width: 167px;
+        letter-spacing: .1px;
+    }
+    .hand__title-img {
+        margin: 0;
+        font-size: 11px;
+        width: 120px;
+    }
+    .hand__text {
+        font-size: 9px;
+        width: 146px;
 
-        &__pic{
-            margin: 0 auto;
-        }
-        &__title-img{
-            margin: 0 auto;
-        }
-        &__title {
-            width: 240px;
-            font-size: 24px;
-            line-height: 1.5;
-        }
-        &__text--before {
-            font-size: 10px;
-            width: 167px;
-            letter-spacing: 0.1px;
-        }
-        &__title-img {
-            margin: 0;
-            font-size: 11px;
-            width: 120px;
-        }
-        &__text {
-            font-size: 9px;
-            width: 146px;
+        &--before:before{
+    
+            width: 45px;
+            height: 4px;
+            
         }
     }
-    
 
+    .only-about{
+        display: flex;
+        justify-content: space-around;
+        width: 640px;
+        margin: 0 auto;
 
+        &-pic{
+            margin: 30px 0 0;
+        }
+        &__text{
+            width: 170px;
 
+            &--color:before{
+                width: 45px;
+                height: 4px;
+                right: 15px;
+                
+            }
+        }
+        &__fraction{
+            font-size: 16px;
+            font-weight: 900;
+        }
+        &__title{
+            width: 270px;
+            font-size: 24px;
 
+        }
+    }
 
+    .only-opportunities{
 
+        display: flex;
+        width: 640px;
+        margin: 0 auto;
 
+        &__title{
+            width: 113px;
+            margin-top: 49px;
+        }
+        &-list{
+            width: 470px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__item{
+                display: flex;
+                flex-direction: column;
+                width: 116px;
+                margin-left: 37px;
+            }
+
+            &--color{
+                width: 116px;
+                font-size: 9px;
+            }
+
+            &__text{
+                width: 116px;
+                font-size: 10px;
+            }
+        }
+    }
 }
 
 
+@media (min-width:960px){
+    .hand{
+        width: 790px;
+        &-left{
+            width: 300px;
+        }
+        &__title{
+            width: 300px;
+            font-size: 30px;
+            margin-left: 42px;
+        }
+        &__text--before{
+            font-size: 14px;
+            width: 220px;
+        }
+        &__title-img{
 
+        }
+
+    }
+
+    .only{
+        &-about{
+            width: 710px;
+
+            &-pic{
+                width: 300px;
+            }
+
+            &__pic{
+                width: 300px;
+                height: 270px;
+            }
+
+            &-rightblock{
+                width: 343px;
+            }
+
+            &__title{
+                width: 343px;
+                font-size: 30px;
+            }
+        }
+        
+        &-opportunities{
+            width: 800px;
+
+            &__title{
+                width: 141px;
+                font-size: 18px;
+            }
+        }
+    }
+} 
