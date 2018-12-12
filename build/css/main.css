@@ -235,6 +235,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 85%;
+    max-width: 850px;
     margin: 0 auto;
   }
 
@@ -266,6 +267,7 @@
 
   .beginning-list__title {
     width: 85%;
+    max-width: 850px;
     margin: 67px auto 0;
   }
 
@@ -300,6 +302,10 @@
     font-size: 16px;
   }
 
+  .beginning__list {
+    width: 850px;
+  }
+
   .beginning__summary {
     font-size: 10px;
     width: 24%;
@@ -309,6 +315,10 @@
     font-size: 14px;
     width: 220px;
     margin-bottom: 10px;
+  }
+
+  .beginning-list__title {
+    width: 850px;
   }
 
   .beginning__item {

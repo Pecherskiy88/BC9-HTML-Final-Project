@@ -121,7 +121,12 @@
             flex-wrap: wrap;
             justify-content: space-between;
             width: 85%;
+            max-width: 850px;            
             margin: 0 auto;
+        }
+
+        @media (min-width:960px){
+            width: 850px;
         }
 
         @media (min-width: 1200px){
@@ -260,8 +265,13 @@
         }
 
         @media (min-width:768px){
-            width: 85%;            
+            width: 85%;
+            max-width: 850px;            
             margin: 67px auto 0;
+        }
+
+        @media (min-width:960px){
+            width: 850px;
         }
 
         @media (min-width: 1200px){
