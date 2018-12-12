@@ -1,6 +1,10 @@
 /*
    Import partials below
 */
-@import "_variables";
-@import "_mixins";
-@import "_fonts";
+@import "./variables";
+
+@import "./mixins";
+
+@import "./fonts";
+
+@import "astep";
