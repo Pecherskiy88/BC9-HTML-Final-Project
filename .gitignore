@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+=======
+
 # Exclude any PSD/AI source
 *.psd
 *.ai
 
+>>>>>>> master
 # Logs
 logs
 *.log
@@ -64,5 +68,15 @@ typings/
 # file: ~/.gitignore_global
 .DS_Store
 .idea
+
+
+
+.zip
+
+#ignore build folder
+build/
+
 .idea/
 .vscode
+
+
