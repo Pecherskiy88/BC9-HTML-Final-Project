@@ -1,3 +1,8 @@
+
+# Exclude any PSD/AI source
+*.psd
+*.ai
+
 # Logs
 logs
 *.log
@@ -60,6 +65,6 @@ typings/
 # file: ~/.gitignore_global
 .DS_Store
 .idea
+.idea/
+.vscode
 
-
-.zip
