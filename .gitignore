@@ -71,7 +71,7 @@ typings/
 .zip
 
 #ignore build folder
-build/
+
 
 .idea/
 .vscode
