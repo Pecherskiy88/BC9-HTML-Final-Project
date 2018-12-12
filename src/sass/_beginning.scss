@@ -120,8 +120,13 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            width: 850px;
+            width: 85%;
+            max-width: 850px;            
             margin: 0 auto;
+        }
+
+        @media (min-width:960px){
+            width: 850px;
         }
 
         @media (min-width: 1200px){
@@ -260,12 +265,18 @@
         }
 
         @media (min-width:768px){
-            width: 850px;            
+            width: 85%;
+            max-width: 850px;            
             margin: 67px auto 0;
+        }
+
+        @media (min-width:960px){
+            width: 850px;
         }
 
         @media (min-width: 1200px){
             width: 180px;
+            
         }
         
         @media (min-width: 1440px){
@@ -364,6 +375,10 @@
 }
 
 .list-wrapper {
+    @media (min-width: 768px){
+        margin: 0 auto;
+    }
+
     @media (min-width: 1200px){
         display: flex;
         width: 850px;
