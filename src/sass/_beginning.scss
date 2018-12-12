@@ -120,7 +120,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            width: 850px;
+            width: 630px;
             margin: 0 auto;
         }
 
@@ -260,7 +260,7 @@
         }
 
         @media (min-width:768px){
-            width: 850px;            
+            width: 630px;            
             margin: 67px auto 0;
         }
 
@@ -364,6 +364,10 @@
 }
 
 .list-wrapper {
+    @media (min-width: 768px){
+        margin: 0 auto;
+    }
+
     @media (min-width: 1200px){
         display: flex;
         width: 850px;

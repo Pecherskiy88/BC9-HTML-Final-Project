@@ -234,7 +234,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 850px;
+    width: 630px;
     margin: 0 auto;
   }
 
@@ -265,7 +265,7 @@
   }
 
   .beginning-list__title {
-    width: 850px;
+    width: 630px;
     margin: 67px auto 0;
   }
 
@@ -277,6 +277,10 @@
 
   .beginning__item:before {
     display: none;
+  }
+
+  .list-wrapper {
+    margin: 0 auto;
   }
 }
 
