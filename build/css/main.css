@@ -39,6 +39,242 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+}
+
+.facts {
+  margin: o auto;
+  padding-top: 25px;
+  position: relative;
+}
+
+.facts__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.25;
+  text-align: center;
+  margin: 0;
+}
+
+.facts__subtitle::before {
+  position: relative;
+  left: -6.25%;
+  top: 8px;
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 4.375%;
+  height: 3px;
+  margin-right: 3.75%;
+  margin-top: 4px;
+}
+
+.facts__subtitle {
+  margin-top: 28px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  width: 51.5625%;
+}
+
+.facts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facts__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ff6007;
+  list-style: square;
+  margin-top: 20px;
+  width: 78.75%;
+}
+
+.facts__list-title,
+.facts__list-title-little {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.facts__list-title-little {
+  font-size: 6px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+}
+
+.facts__list-subtitle {
+  font-size: 9px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.714;
+  text-align: left;
+  background-color: #16ebfe;
+  margin-top: 7px;
+}
+
+.facts__list-text {
+  font-size: 9px;
+  font-weight: 400;
+  color: #3f4144;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 11px;
+}
+
+.facts__img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  align-self: flex-end;
+  z-index: -1;
+  display: none;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.digits__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digits__title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: left;
+  background-color: #000;
+  width: 57.1875%;
+  margin-top: 23px;
+}
+
+.digits__subtitle {
+  font-size: 9px;
+  font-weight: 700;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.444;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.digits__text {
+  font-size: 9px;
+  font-weight: 400;
+  color: #3f4144;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.444;
+  text-align: left;
+  margin-top: 8px;
+  width: 91.875%;
+}
+
+.digits__marker {
+  font-size: 9px;
+  font-weight: 400;
+  color: #3f4144;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.444;
+  text-align: left;
+  background-color: #16ebfe;
+}
+
+.digits__column-desh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digits__subtitle-desh::before {
+  position: relative;
+  left: -6.25%;
+  top: 8px;
+  content: "";
+  display: block;
+  background-color: #000;
+  width: 4.375%;
+  height: 3px;
+  margin-right: 3.75%;
+  margin-top: 4px;
+}
+
+.digits__subtitle-desh {
+  margin-top: 28px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.5;
+  text-align: left;
+  width: 51.5625%;
+}
+
+.digits__list {
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digits__item {
+  margin-top: 20px;
+  width: 75%;
+}
+
+.digits__item-title {
+  font-size: 9px;
+  font-weight: 800;
+  color: #000;
+  font-family: "Acrom", sans-serif;
+  text-transform: uppercase;
+  line-height: 1.444;
+  text-align: left;
+}
+
+.digits__item-text {
+  font-size: 9px;
+  font-weight: 400;
+  color: #3f4144;
+  font-family: "Acrom", sans-serif;
+  line-height: 1.444;
+  text-align: left;
+}
+
+* {
   margin: 0 auto;
   padding: 0;
 }
@@ -1675,6 +1911,70 @@ button {
 }
 
 @media (min-width: 480px) {
+  .facts__title {
+    font-size: 18px;
+  }
+
+  .facts__subtitle::before {
+    width: 4.166666667%;
+  }
+
+  .facts__subtitle {
+    font-size: 13.5px;
+    width: 51.66666667%;
+  }
+
+  .facts__list-title {
+    font-size: 18px;
+  }
+
+  .facts__list-title-little {
+    font-size: 9px;
+  }
+
+  .facts__list-subtitle {
+    font-size: 13.5px;
+  }
+
+  .facts__list-text {
+    font-size: 13.5px;
+  }
+
+  .digits__title {
+    font-size: 18px;
+  }
+
+  .digits__subtitle {
+    font-size: 13.5px;
+    margin-top: 30px;
+  }
+
+  .digits__text {
+    font-size: 13.5px;
+    margin-top: 12px;
+  }
+
+  .digits__marker {
+    font-size: 13.5px;
+  }
+
+  .digits__subtitle-desh::before {
+    width: 4.166666667%;
+  }
+
+  .digits__subtitle-desh {
+    font-size: 13.5px;
+    width: 51.66666667%;
+  }
+
+  .digits__item-title {
+    font-size: 13.5px;
+  }
+
+  .digits__item-text {
+    font-size: 13.5px;
+  }
+
   .hand__title {
     width: 50%;
     font-size: 1rem;
@@ -1818,6 +2118,148 @@ button {
 }
 
 @media (min-width: 768px) {
+  .facts {
+    width: 70%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .facts__column {
+    width: 33.83458647%;
+  }
+
+  .facts__title {
+    font-size: 26px;
+  }
+
+  .facts__subtitle::before {
+    left: -27%;
+    width: 20%;
+    height: 4px;
+  }
+
+  .facts__subtitle {
+    margin-top: 24px;
+    font-size: 9px;
+    width: 62.22222222%;
+  }
+
+  .facts__list {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 58.83458647%;
+  }
+
+  .facts__item {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    width: 47.92332268%;
+  }
+
+  .facts__item:nth-of-type(2) {
+    order: 4;
+  }
+
+  .facts__item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .facts__list-subtitle {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+
+  .facts__list-text {
+    font-size: 8px;
+  }
+
+  .facts__img {
+    display: flex;
+    right: -15%;
+    bottom: 9%;
+  }
+
+  .digits {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 76.69270833%;
+  }
+
+  .digits__column {
+    width: 46.85908319%;
+    position: relative;
+  }
+
+  .digits__title {
+    font-size: 9px;
+    width: 27%;
+    margin-top: 23px;
+  }
+
+  .digits__title--absolute {
+    position: absolute;
+    left: 1%;
+    top: 69%;
+  }
+
+  .digits__title--font-size {
+    font-size: 27px;
+    width: 100%;
+  }
+
+  .digits__subtitle {
+    font-size: 9px;
+    width: 55.43478261%;
+    margin-top: 32px;
+    margin-left: 36.23188406%;
+  }
+
+  .digits__text {
+    font-size: 8px;
+    width: 61%;
+    margin-left: 36.23188406%;
+  }
+
+  .digits__marker {
+    font-size: 8px;
+  }
+
+  .digits__column-right {
+    width: 44.1426146%;
+  }
+
+  .digits__subtitle-desh::before {
+    width: 20%;
+    left: -25%;
+  }
+
+  .digits__subtitle-desh {
+    font-size: 9px;
+    width: 61.53846154%;
+  }
+
+  .digits__item {
+    width: 88%;
+  }
+
+  .digits__item-title {
+    font-size: 9px;
+  }
+
+  .digits__item-text {
+    font-size: 8px;
+  }
+
   .hand {
     padding-top: 3.5625rem;
     width: 80%;
@@ -2165,6 +2607,72 @@ button {
 }
 
 @media (min-width: 960px) {
+  .facts__title {
+    font-size: 33px;
+  }
+
+  .facts__subtitle {
+    margin-top: 30px;
+    font-size: 11px;
+  }
+
+  .facts__list-subtitle {
+    font-size: 10px;
+    margin-top: 13px;
+  }
+
+  .facts__list-text {
+    font-size: 10px;
+  }
+
+  .facts__img {
+    right: -15%;
+    bottom: 8%;
+  }
+
+  .digits__title {
+    font-size: 11px;
+  }
+
+  .digits__title--absolute {
+    left: 1%;
+    top: 70.5%;
+  }
+
+  .digits__title--font-size {
+    font-size: 33px;
+  }
+
+  .digits__subtitle {
+    font-size: 11px;
+    margin-top: 41px;
+  }
+
+  .digits__text {
+    font-size: 10px;
+  }
+
+  .digits__marker {
+    font-size: 10px;
+  }
+
+  .digits__subtitle-desh::before {
+    width: 20%;
+    left: -25%;
+  }
+
+  .digits__subtitle-desh {
+    font-size: 11px;
+  }
+
+  .digits__item-title {
+    font-size: 12px;
+  }
+
+  .digits__item-text {
+    font-size: 11px;
+  }
+
   .hand {
     width: 80%;
   }
@@ -2300,6 +2808,83 @@ button {
 }
 
 @media (min-width: 1200px) {
+  .facts__title {
+    font-size: 30px;
+  }
+
+  .facts__subtitle {
+    margin-top: 30px;
+    font-size: 10px;
+    width: 50%;
+  }
+
+  .facts__item {
+    width: 35%;
+  }
+
+  .facts__list-subtitle {
+    font-size: 9px;
+    margin-top: 13px;
+  }
+
+  .facts__list-text {
+    font-size: 9px;
+  }
+
+  .facts__img {
+    right: -20%;
+    bottom: 7%;
+  }
+
+  .digits__title {
+    font-size: 10px;
+  }
+
+  .digits__title--absolute {
+    left: 1%;
+    top: 74.5%;
+  }
+
+  .digits__title--font-size {
+    font-size: 30px;
+    width: 70%;
+  }
+
+  .digits__subtitle {
+    font-size: 10px;
+    margin-top: 41px;
+  }
+
+  .digits__text {
+    font-size: 9px;
+  }
+
+  .digits__marker {
+    font-size: 9px;
+  }
+
+  .digits__subtitle-desh::before {
+    width: 20%;
+    left: -25%;
+  }
+
+  .digits__subtitle-desh {
+    font-size: 10px;
+    width: 45%;
+  }
+
+  .digits__item {
+    width: 60%;
+  }
+
+  .digits__item-title {
+    font-size: 10px;
+  }
+
+  .digits__item-text {
+    font-size: 9px;
+  }
+
   .background-text {
     font-size: 171px;
     bottom: -304px;
@@ -2384,6 +2969,81 @@ button {
 }
 
 @media (min-width: 1440px) {
+  .facts__title {
+    font-size: 36px;
+  }
+
+  .facts__subtitle {
+    margin-top: 30px;
+    font-size: 12px;
+    width: 50%;
+  }
+
+  .facts__item {
+    width: 35%;
+  }
+
+  .facts__list-subtitle {
+    font-size: 10.5px;
+    margin-top: 13px;
+  }
+
+  .facts__list-text {
+    font-size: 10.5px;
+  }
+
+  .facts__img {
+    right: -15%;
+    bottom: 8%;
+  }
+
+  .digits__column {
+    width: 35%;
+  }
+
+  .digits__title {
+    font-size: 12px;
+  }
+
+  .digits__title--absolute {
+    left: 1%;
+    top: 70.5%;
+  }
+
+  .digits__title--font-size {
+    font-size: 36px;
+  }
+
+  .digits__subtitle {
+    font-size: 12px;
+    margin-top: 41px;
+  }
+
+  .digits__text {
+    font-size: 10.5px;
+  }
+
+  .digits__marker {
+    font-size: 10.5px;
+  }
+
+  .digits__subtitle-desh::before {
+    width: 20%;
+    left: -25%;
+  }
+
+  .digits__subtitle-desh {
+    font-size: 12px;
+  }
+
+  .digits__item-title {
+    font-size: 12px;
+  }
+
+  .digits__item-text {
+    font-size: 10.5px;
+  }
+
   .beginning-wrapper {
     width: 850px;
   }
