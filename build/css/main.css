@@ -1016,7 +1016,6 @@ input {
 .only-about__pic {
   display: block;
   width: 80%;
-  height: 80%;
   margin: 0 auto;
 }
 
@@ -2818,7 +2817,6 @@ button {
 
   .only-about__pic {
     width: 80%;
-    height: 80%;
   }
 
   .only-about__text {
@@ -3551,7 +3549,6 @@ button {
   .only-about-pic {
     margin: 1.875rem 0 0;
     width: 50%;
-    height: 60%;
   }
 
   .only-about-rightblock {
@@ -4060,12 +4057,10 @@ button {
 
   .only-about-pic {
     width: 50%;
-    height: 60%;
   }
 
   .only-about__pic {
     width: 50%;
-    height: 60%;
   }
 
   .only-about-rightblock {
