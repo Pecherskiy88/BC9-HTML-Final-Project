@@ -1,7 +1,9 @@
 
+
 # Exclude any PSD/AI source
 *.psd
 *.ai
+
 
 # Logs
 logs
@@ -9,6 +11,12 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# build artifacts
+build/
+
+
 
 # Runtime data
 pids
@@ -62,6 +70,7 @@ typings/
 # dotenv environment variables file
 .env
 
+
 # file: ~/.gitignore_global
 .DS_Store
 .idea
@@ -75,5 +84,4 @@ typings/
 
 .idea/
 .vscode
-
 
