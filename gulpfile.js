@@ -32,7 +32,7 @@ gulp.task('html', () => {
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('styles', () => {
+gulp.task('main', () => {
   return gulp
     .src('./src/sass/main.scss')
     .pipe(plumber())
@@ -96,11 +96,11 @@ gulp.task('fonts', () => {
 
 gulp.task('watch', () => {
   gulp.watch('src/**/*.html', ['html']).on('change', server.reload);
-  gulp.watch('src/sass/**/*.scss', ['styles']);
+  gulp.watch('src/sass/**/*.scss', ['main']);
   gulp.watch('src/js/**/*.js', ['scripts']).on('change', server.reload);
 });
 
-gulp.task('serve', ['styles'], () => {
+gulp.task('serve', ['main'], () => {
   return server.init({
     server: './build',
     notify: false,
@@ -120,7 +120,7 @@ gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 gulp.task('build', callback =>
   sequence(
     'del:build',
-    ['sprite', 'images', 'fonts', 'styles', 'html', 'scripts'],
+    ['sprite', 'images', 'fonts', 'main', 'html', 'scripts'],
     callback
   )
 );
