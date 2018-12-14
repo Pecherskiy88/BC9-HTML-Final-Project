@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    outline: 1px solid red;
 }
 
 .people_warning_section{
@@ -296,6 +297,11 @@
     .warning_list__text{
         margin-top: 11px;
     }
+    .warning_left__img{
+        // width: 170px;
+        position: relative;
+        top: -88px;
+    }
 }
 
 
@@ -349,7 +355,7 @@
         width: 860px;
     }
 }
-// @@@
+
 
 
 
