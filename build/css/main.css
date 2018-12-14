@@ -41,7 +41,7 @@
   color: #000;
   font-family: "Acrom";
   text-transform: uppercase;
-  width: 250px;
+  width: 251px;
   margin: 0 auto 10px;
 }
 
@@ -576,7 +576,7 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .study--main_title {
     font-size: 18px;
-    width: 375px;
+    width: 376px;
     margin-bottom: 16px;
   }
 
