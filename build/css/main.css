@@ -3904,6 +3904,11 @@ button {
     margin-top: 11px;
   }
 
+  .warning_left__img {
+    position: relative;
+    top: -88px;
+  }
+
   .important {
     display: flex;
     flex-direction: row;
