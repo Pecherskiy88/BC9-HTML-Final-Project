@@ -37,7 +37,7 @@
 
 .study--main_title {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   color: #000;
   font-family: "Acrom";
   text-transform: uppercase;
@@ -254,7 +254,6 @@
   }
 
   .study_recognized--list {
-    width: 475px;
     display: flex;
     justify-content: space-between;
   }
@@ -291,6 +290,98 @@
 
   .study--title {
     margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 960px) {
+  .study_header,
+  .study_footer {
+    width: 800px;
+  }
+
+  .study--main_title {
+    width: 284px;
+    font-size: 34px;
+  }
+
+  .study_aside {
+    width: 432px;
+  }
+
+  .study_biggest--title {
+    margin-left: 41px;
+    width: 114px;
+  }
+
+  .study_biggest--paragraph {
+    margin-bottom: 31px;
+    margin-left: 23px;
+    width: 150px;
+  }
+
+  .study_numberone::before {
+    margin: 5px 23px 0 0;
+    width: 36px;
+    height: 5px;
+  }
+
+  .study_numberone {
+    position: relative;
+    bottom: 52px;
+    width: 251px;
+    margin: 0 0 24px;
+  }
+
+  .study_numberone--paragraph {
+    width: 192px;
+    font-size: 11px;
+  }
+
+  .study_goforit {
+    width: 173px;
+  }
+
+  .study_goforit--image {
+    width: 73px;
+  }
+
+  .study_goforit--sub_title {
+    width: 150px;
+  }
+
+  .study_recognized {
+    width: 596px;
+  }
+
+  .study_recognized--list_item {
+    width: 185px;
+  }
+
+  .study_recognized--list_item_image1,
+  .study_recognized--list_item_image2 {
+    width: 69px;
+  }
+
+  .study_recognized--list_item_title {
+    width: 68px;
+    margin-bottom: 10px;
+  }
+
+  .study_recognized--list_item_para {
+    width: 107px;
+  }
+
+  .study--paragraph,
+  .study--title {
+    font-size: 10px;
+  }
+
+  .study--sub_title {
+    font-size: 11px;
+  }
+
+  .study--title {
+    margin-bottom: 26px;
   }
 }
 

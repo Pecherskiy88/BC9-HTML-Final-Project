@@ -6,7 +6,7 @@
     padding: 1.5rem 1rem;
 
     &--main_title{    
-    @include font-style(12, 700);
+    @include font-style(12, 800);
     text-transform: uppercase;
     width: 250px;
     margin: 0 auto 10px;
@@ -267,7 +267,6 @@
             margin: 0;
 
             &--list{
-            width: 475px;
             display: flex;
             justify-content: space-between;
 
@@ -302,5 +301,102 @@
         &--title{
             margin-bottom: 16px;
         }
+    }
+}
+
+
+@media (min-width: 960px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 800px;
+        }
+
+        &--main_title{
+            width: 284px;
+            font-size: 34px;
+        }
+
+        &_aside {
+            width: 432px;
+        }
+
+        &_biggest {
+            &--title {
+                margin-left: 41px;
+                width: 114px;
+            }
+            &--paragraph {
+                margin-bottom: 31px;
+                margin-left: 23px;
+                width: 150px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 23px 0 0;
+            width: 36px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 251px;
+            margin: 0 0 24px;
+
+            &--paragraph {
+                width: 192px;
+                font-size: 11px;
+            }
+        }
+
+        &_goforit {
+            width: 173px;
+
+            &--image {
+                width: 73px;
+            }
+            &--sub_title {
+                width: 150px;
+            }
+        }
+
+        &_recognized {
+            width: 596px;
+
+            &--list {
+
+                &_item {
+                    width: 185px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 69px;
+                    }
+                    &_title {
+                        width: 68px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 107px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 10px;
+        }
+        &--sub_title{
+            font-size: 11px;
+        }
+        &--title{
+            margin-bottom: 26px;
+        }
+
     }
 }
