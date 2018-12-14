@@ -197,11 +197,17 @@
   }
 
   .study_biggest--title {
+    margin-left: 33px;
     width: 93px;
   }
 
   .study_biggest--paragraph {
+    margin-left: 19px;
     width: 120px;
+  }
+
+  .study--image {
+    margin-bottom: 6px;
   }
 
   .study_numberone::before {
@@ -211,6 +217,8 @@
   }
 
   .study_numberone {
+    position: relative;
+    bottom: 42px;
     width: 201px;
     margin: 0 0 24px;
   }

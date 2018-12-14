@@ -214,11 +214,17 @@
             margin: 0;
 
             &--title{
+                margin-left: 33px;
                 width: 93px;
             }
             &--paragraph{
+                margin-left: 19px;
                 width: 120px;
             }
+        }
+
+        &--image {
+            margin-bottom: 6px;
         }
 
         &_numberone::before {
@@ -228,6 +234,8 @@
         }
 
         &_numberone {
+            position: relative;
+            bottom: 42px;
             width: 201px;
             margin: 0 0 24px;
 
