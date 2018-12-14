@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-/*
-   Import partials below
-*/
-
 @font-face {
   font-family: 'Acrom';
   src: url("../fonts/acrom-extrabold-webfont.woff2") format("woff2");
