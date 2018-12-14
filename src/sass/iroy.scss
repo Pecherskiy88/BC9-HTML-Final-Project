@@ -400,3 +400,99 @@
 
     }
 }
+
+@media (min-width: 1200px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 715px;
+        }
+
+        &--main_title{
+            width: 252px;
+            font-size: 30px;
+        }
+
+        &_aside {
+            width: 386px;
+        }
+
+        &_biggest {
+            &--title {
+                margin-left: 37px;
+                width: 103px;
+            }
+            &--paragraph {
+                margin-bottom: 28px;
+                margin-left: 21px;
+                width: 134px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 23px 0 0;
+            width: 36px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 251px;
+            margin: 0 0 20px;
+
+            &--paragraph {
+                width: 172px;
+                font-size: 10px;
+            }
+        }
+
+        &_goforit {
+            width: 153px;
+
+            &--image {
+                width: 64px;
+            }
+            &--sub_title {
+                width: 135px;
+            }
+        }
+
+        &_recognized {
+            width: 530px;
+
+            &--list {
+
+                &_item {
+                    width: 165px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 62px;
+                    }
+                    &_title {
+                        width: 61px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 97px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 9px;
+        }
+        &--sub_title{
+            font-size: 10px;
+        }
+        &--title{
+            margin-bottom: 21px;
+        }
+
+    }
+}
