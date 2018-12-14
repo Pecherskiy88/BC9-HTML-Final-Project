@@ -496,3 +496,101 @@
 
     }
 }
+
+@media (min-width: 1440px){
+    .study{
+        
+        &_header,
+        &_footer{
+            width: 855px;
+        }
+
+        &--main_title{
+            width: 303px;
+            font-size: 36px;
+        }
+
+        &_aside {
+            width: 462px;
+        }
+
+        &_biggest {
+            width: 365px;
+
+            &--title {
+                margin-left: 44px;
+                width: 125px;
+            }
+            &--paragraph {
+                margin-bottom: 34px;
+                margin-left: 25px;
+                width: 175px;
+            }
+        }
+
+        &_numberone::before {
+            margin: 5px 25px 0 0;
+            width: 38px;
+            height: 5px;
+        }
+
+        &_numberone {
+            position: relative;
+            bottom: 52px;
+            width: 267px;
+            margin: 0 0 20px;
+
+            &--paragraph {
+                width: 214px;
+                font-size: 12px;
+            }
+        }
+
+        &_goforit {
+            width: 185px;
+
+            &--image {
+                width: 77px;
+            }
+            &--sub_title {
+                width: 162px;
+            }
+        }
+
+        &_recognized {
+            width: 638px;
+
+            &--list {
+
+                &_item {
+                    width: 200px; 
+
+                    &_image1,
+                    &_image2{
+                        width: 74px;
+                    }
+                    &_title {
+                        width: 74px;
+                        margin-bottom: 10px;
+                    }
+                    &_para{
+                        width: 118px;
+                    }
+
+                }
+            }
+        }
+
+        &--paragraph,
+        &--title{
+            font-size: 11px;
+        }
+        &--sub_title{
+            font-size: 12px;
+        }
+        &--title{
+            margin-bottom: 26px;
+        }
+
+    }
+}
